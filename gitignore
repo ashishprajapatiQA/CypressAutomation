@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+assets
+.scannerwork
+logs
+.vscode
+testImage
+coverage
+sonar-project.properties
+test-report.xml
