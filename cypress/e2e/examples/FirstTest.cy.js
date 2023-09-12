@@ -8,6 +8,7 @@ describe('UserLove Test', () => {
     //cy.xpath('//*[@id=":r1:"]').type(dayjs().format('DD/MM/YYYY'));
 
     cy.visit('https://userlove.io/login')
+    cy.url().should('include','userlove')
     cy.title().should('eq', 'Userlove | Sign In')
     cy.wait(4000)
 
