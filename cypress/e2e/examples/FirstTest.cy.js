@@ -18,22 +18,62 @@ describe('UserLove Test', () => {
     cy.get('.gs-primary-button').should('be.visible').should('be.enabled').click();
     cy.wait(5000);
 
+    //Dashboard
     cy.contains('Bounce rate').scrollIntoView({ duration: 4000 });   // scroll smoothly      
     cy.wait(3000);
 
 
     // Setting
     cy.xpath('/html/body/div/div/div[1]/div[2]/button[2]/div[2]').should('be.visible').click(); cy.wait(2000); 
-    cy.xpath('/html/body/div[2]/div[3]/div/div[5]/button').should('be.visible').click();cy.title().should('eq', 'Userlove | Profile'); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[2]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[3]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[4]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[5]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[6]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[7]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[8]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[9]').should('be.visible').click(); cy.wait(2000);
-    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[10]').should('be.visible').click(); cy.wait(2000);
+    // profile
+    cy.xpath('/html/body/div[2]/div[3]/div/div[5]/button').should('be.visible').click();
+    cy.title().should('eq', 'Userlove | Profile');
+    cy.wait(2000); 
+   
+    // Security
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[2]').should('be.visible').click();
+    cy.wait(2000);cy.title().should('eq', 'Userlove | Security'); cy.wait(2000); 
+   
+     // installation
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[3]').should('be.visible').click(); 
+    cy.wait(2000);cy.title().should('eq', 'Userlove | Security');
+    cy.wait(2000);
+   
+    //Attribiute
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[4]').should('be.visible').click(); 
+    cy.wait(2000);cy.title().should('eq', 'Userlove | Attributes');
+    cy.wait(2000); 
+   
+    //company Details
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[5]').should('be.visible').click();
+    cy.wait(2000);cy.title().should('eq', 'Userlove | Company Details');
+    cy.wait(2000); 
+   
+    //manage domain 
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[6]').should('be.visible').click();
+    cy.wait(2000);
+    cy.title().should('eq', 'Userlove | Manage Domain');
+    cy.wait(2000);
+   
+    // team 
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[7]').should('be.visible').click();
+    cy.wait(2000);
+    cy.title().should('eq', 'Userlove | Team');
+    cy.wait(2000);
+   
+    // role&permission
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[8]').should('be.visible').click();
+    cy.wait(2000);
+    cy.title().should('eq', 'Userlove | Role & Permission');
+    cy.wait(2000); 
+   
+    //billing
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[9]').should('be.visible').click();
+    cy.wait(2000);
+    cy.title().should('eq', 'Userlove | Billings & Plans');
+    cy.wait(2000);
+
+    
     //Tour
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div/div/a[2]').should('be.visible').click();
     cy.get('.ContentWrapper_gs-content-wrapper-container-children__Qh5L1').scrollIntoView({ duration: 4000 });
@@ -55,9 +95,4 @@ describe('UserLove Test', () => {
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div/div/a[7]').should('be.visible').click();
 
   })
-
-
-
-
-
 })
