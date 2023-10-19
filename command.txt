@@ -4,3 +4,9 @@ git add . (stagging)    //  first or commit karva (dot mean all file) stagging a
 git commit -m "comment text" // added file commit with comment 
 git pull origin master  //  pull from latest code to local
 git push origin master  // local to push code to github
+
+
+
+npm install cypress-xpath
+
+node_modules\.bin\cypress open
