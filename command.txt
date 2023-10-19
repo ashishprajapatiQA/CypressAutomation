@@ -1,9 +1,18 @@
 git remote add origin ---path----   // new repo (blank repo) first time map kariye 
+
+ git remote add  origin git@github.com:ashishprajapatiQA/CypressAutomation.git
+
+ 
+
+ git checkout master // swith branch
+ git checkout -b nameofnewbranch // new branch
+
 git clone ---path----   // existing repo local ma leiye
 git add . (stagging)    //  first or commit karva (dot mean all file) stagging add        
 git commit -m "comment text" // added file commit with comment 
 git pull origin master  //  pull from latest code to local
 git push origin master  // local to push code to github
+git push origin -u master  // first time push kare to new branch ma
 
 
 
