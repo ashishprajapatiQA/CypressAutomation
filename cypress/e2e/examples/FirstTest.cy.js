@@ -13,7 +13,7 @@ describe('UserLove Test', () => {
     cy.wait(4000)
 
 
-    cy.xpath('//*[@id=":r0:"]').should('be.visible').should('be.enabled').type('lopeduru@clout.wiki');
+    cy.xpath('//*[@id=":r0:"]').should('be.visible').should('be.enabled').type('vapiluly@clout.wiki');
     cy.xpath('//*[@id=":r1:"]').should('be.visible').should('be.enabled').type('Test@123');
     cy.get('.gs-primary-button').should('be.visible').should('be.enabled').click();
     cy.wait(5000);
@@ -36,7 +36,7 @@ describe('UserLove Test', () => {
    
      // installation
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[3]').should('be.visible').click(); 
-    cy.wait(2000);cy.title().should('eq', 'Userlove | Security');
+    cy.wait(2000);cy.title().should('eq', 'Userlove | Installation');
     cy.wait(2000);
    
     //Attribiute
@@ -52,19 +52,19 @@ describe('UserLove Test', () => {
     //manage domain 
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[6]').should('be.visible').click();
     cy.wait(2000);
-    cy.title().should('eq', 'Userlove | Manage Domain');
+    cy.title().should('eq', 'Userlove | Manage domain');
     cy.wait(2000);
    
     // team 
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[7]').should('be.visible').click();
     cy.wait(2000);
-    cy.title().should('eq', 'Userlove | Team');
+    cy.title().should('eq', 'Userlove | Team Users');
     cy.wait(2000);
    
     // role&permission
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div[2]/a[8]').should('be.visible').click();
     cy.wait(2000);
-    cy.title().should('eq', 'Userlove | Role & Permission');
+    cy.title().should('eq', 'Userlove | Role and Permission');
     cy.wait(2000); 
    
     //billing
@@ -85,14 +85,18 @@ describe('UserLove Test', () => {
     //Survey
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div/div/a[4]').should('be.visible').click();
     cy.wait(2000);
-    //Users
+    //DemoX
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div/div/a[5]').should('be.visible').click();
     cy.wait(2000);
-    //Events
+    //Users
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div/div/a[6]').should('be.visible').click();
     cy.wait(2000);
-    //Theme
+    //Event
     cy.xpath('/html/body/div/div/div[2]/div[1]/div/div/div/a[7]').should('be.visible').click();
+    cy.wait(2000);
+    //Theme
+    cy.xpath('/html/body/div/div/div[2]/div[1]/div/div/div/a[8]').should('be.visible').click();
+    cy.wait(2000);
 
   })
 })
