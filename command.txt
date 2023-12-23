@@ -19,3 +19,5 @@ git push origin -u master  // first time push kare to new branch ma
 npm install cypress-xpath
 
 node_modules\.bin\cypress open
+
+node_modules\.bin\cypress run --headed  // video + SS 
