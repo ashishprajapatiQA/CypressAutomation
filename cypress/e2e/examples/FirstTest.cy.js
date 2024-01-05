@@ -13,7 +13,7 @@ describe('UserLove Test', () => {
     cy.wait(4000)
 
 
-    cy.xpath('//*[@id=":r0:"]').should('be.visible').should('be.enabled').type('vapiluly@clout.wiki');
+    cy.xpath('//*[@id=":r0:"]').should('be.visible').should('be.enabled').type('silokafi@pelagius.net');
     cy.xpath('//*[@id=":r1:"]').should('be.visible').should('be.enabled').type('Test@123');
     cy.get('.gs-primary-button').should('be.visible').should('be.enabled').click();
     cy.wait(5000);
