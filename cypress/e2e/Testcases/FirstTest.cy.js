@@ -1,4 +1,4 @@
-//<reference type="cypress"/>
+///<><reference type="cypress" /><reference type="cypress/xpath" /></>
 
 describe('UserLove Test', () => {
 
@@ -11,7 +11,6 @@ describe('UserLove Test', () => {
     cy.url().should('include','userlove')
     cy.title().should('eq', 'Userlove | Sign In')
     cy.wait(4000)
-
 
     cy.xpath('//*[@id=":r0:"]').should('be.visible').should('be.enabled').type('silokafi@pelagius.net');
     cy.xpath('//*[@id=":r1:"]').should('be.visible').should('be.enabled').type('Test@123');

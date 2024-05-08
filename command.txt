@@ -1,11 +1,19 @@
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+git config --global user.email "ashishprajapati012@gmail.com"   // default pr/commit credential which set to pc
+git config --global user.name "Ashish Prajapati"
+
 git remote add origin ---path----   // new repo (blank repo) first time map kariye 
 
  git remote add  origin git@github.com:ashishprajapatiQA/CypressAutomation.git
+ git remote set-url origin git@github.com:ashishprajapatiQA/CypressAutomation.git // when moved to git to other version control system like gits
 
  
 
- git checkout master // swith branch
- git checkout -b nameofnewbranch // new branch
+ git checkout master // only swith branch
+ git checkout -b nameofnewbranch // new branch bana k switch
+ git branch // list all branch
+ git branch branchname 
+ git branch -d branchname // delete branch
 
 git clone ---path----   // existing repo local ma leiye
 git add . (stagging)    //  first or commit karva (dot mean all file) stagging add        
@@ -14,10 +22,24 @@ git pull origin master  //  pull from latest code to local
 git push origin master  // local to push code to github
 git push origin -u master  // first time push kare to new branch ma
 
-
+======================================================================
+                        Cypress commands
+======================================================================
 
 npm install cypress-xpath
 
 node_modules\.bin\cypress open
 
 node_modules\.bin\cypress run --headed  // video + SS 
+
+======================================================================
+                   selenium project structure
+======================================================================
+Module 1 --> Base Class --> Testcases ( TC01 ... TCn ) --> Reports 
+
+			    -UI Visiablity verification
+			    -Validation verification
+                            -Functional verification
+
+All Functional testcase should cover.
+Another code for smoke testing to verify build working or not.
