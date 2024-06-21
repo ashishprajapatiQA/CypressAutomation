@@ -1,4 +1,4 @@
-///<><reference type="cypress" /><reference type="cypress/xpath" /></>
+//<reference type="cypress" />
 
 describe('UserLove Test', () => {
 
@@ -12,18 +12,17 @@ describe('UserLove Test', () => {
     cy.title().should('eq', 'Userlove | Sign In')
     cy.wait(4000)
 
-    cy.xpath('//*[@id=":r0:"]').should('be.visible').should('be.enabled').type('silokafi@pelagius.net');
+    cy.xpath('//*[@id=":r0:"]').should('be.visible').should('be.enabled').type('p0p17n@amik.pro');
     cy.xpath('//*[@id=":r1:"]').should('be.visible').should('be.enabled').type('Test@123');
     cy.get('.gs-primary-button').should('be.visible').should('be.enabled').click();
-    cy.wait(5000);
-
+   
     //Dashboard
-    cy.contains('Bounce rate').scrollIntoView({ duration: 4000 });   // scroll smoothly      
+    cy.contains('Country users and view').scrollIntoView({ duration: 4000 });   // scroll smoothly      
     cy.wait(3000);
 
 
     // Setting
-    cy.xpath('/html/body/div/div/div[1]/div[2]/button[2]/div[2]').should('be.visible').click(); cy.wait(2000); 
+    cy.xpath('/html/body/div/div/div[1]/div[2]/button[2]/svg').should('be.visible').click(); cy.wait(2000); 
     // profile
     cy.xpath('/html/body/div[2]/div[3]/div/div[5]/button').should('be.visible').click();
     cy.title().should('eq', 'Userlove | Profile');
