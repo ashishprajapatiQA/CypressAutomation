@@ -43,3 +43,16 @@ Module 1 --> Base Class --> Testcases ( TC01 ... TCn ) --> Reports
 
 All Functional testcase should cover.
 Another code for smoke testing to verify build working or not.
+
+
+
+                users.add(new UserData("Aaaa", "ashishprajapati+601@gainserv.com", "Test@123", "comu601"));
+		users.add(new UserData("bbbb", "ashishprajapati+602@gainserv.com", "Test@123", "comu602"));
+		users.add(new UserData("cccc", "ashishprajapati+603@gainserv.com", "Test@123", "comu603"));
+		users.add(new UserData("usdd", "ashishprajapati+604@gainserv.com", "Test@123", "comu604"));
+		users.add(new UserData("useeg", "ashishprajapati+605@gainserv.com", "Test@123", "comu605"));
+		users.add(new UserData("usffg", "ashishprajapati+606@gainserv.com", "Test@123", "comu606"));
+		users.add(new UserData("usggg", "ashishprajapati+607@gainserv.com", "Test@123", "comu607"));
+		users.add(new UserData("ushhg", "ashishprajapati+608@gainserv.com", "Test@123", "comu608"));
+		users.add(new UserData("usiig", "ashishprajapati+609@gainserv.com", "Test@123", "comu609"));
+		users.add(new UserData("usjjg", "ashishprajapati+610@gainserv.com", "Test@123", "comu610"));
